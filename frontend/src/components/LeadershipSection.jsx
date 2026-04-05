@@ -1,17 +1,17 @@
 import React from 'react';
 import { ArrowRight } from 'lucide-react';
+import { Link } from 'react-router-dom';
 
 const LeadershipSection = () => {
   return (
     <section id="leadership" className="py-20 bg-white">
       <div className="max-w-7xl mx-auto px-8">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-16 items-start">
-          {/* Left Side - Content */}
           <div className="space-y-6">
-            <div className="flex items-center gap-3 mb-6">
-              <h3 className="text-2xl font-medium text-[#2c4c6e] tracking-wide">LEADERSHIP</h3>
-              <ArrowRight className="w-5 h-5 text-[#2c4c6e]" />
-            </div>
+            <Link to="/leadership" className="flex items-center gap-3 mb-6 group">
+              <h3 className="text-2xl font-medium text-[#2c4c6e] tracking-wide group-hover:text-[#1a3a54] transition-colors">LEADERSHIP</h3>
+              <ArrowRight className="w-5 h-5 text-[#2c4c6e] group-hover:translate-x-1 transition-transform" />
+            </Link>
             <div className="w-12 h-[2px] bg-[#ddd] mb-6"></div>
             
             <div className="space-y-5 text-[#555] leading-relaxed text-[15px]">
@@ -49,7 +49,6 @@ const LeadershipSection = () => {
             </div>
           </div>
           
-          {/* Right Side - Image */}
           <div>
             <img
               src="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/698c6230c69e9d4f52fff61c/db7ebecbc_image.png"

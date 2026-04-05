@@ -11,13 +11,14 @@ import AdvisoryBoardsSection from './components/AdvisoryBoardsSection';
 import NegotiationSupportSection from './components/NegotiationSupportSection';
 import ConfidentialitySection from './components/ConfidentialitySection';
 import ESGStatementSection from './components/ESGStatementSection';
-import SuccessesSection from './components/SuccessesSection';
-import ContactSection from './components/ContactSection';
 import OurServicesPage from './pages/OurServicesPage';
+import LeadershipPage from './pages/LeadershipPage';
 import AdvisoryBoardsPage from './pages/AdvisoryBoardsPage';
 import NegotiationSupportPage from './pages/NegotiationSupportPage';
 import ConfidentialityPage from './pages/ConfidentialityPage';
 import ESGStatementPage from './pages/ESGStatementPage';
+import SuccessesPage from './pages/SuccessesPage';
+import ContactPage from './pages/ContactPage';
 
 const HomePageContent = () => {
   return (
@@ -30,8 +31,6 @@ const HomePageContent = () => {
       <NegotiationSupportSection />
       <ConfidentialitySection />
       <ESGStatementSection />
-      <SuccessesSection />
-      <ContactSection />
     </>
   );
 };
@@ -44,10 +43,13 @@ function App() {
         <Routes>
           <Route path="/" element={<HomePageContent />} />
           <Route path="/services" element={<OurServicesPage />} />
+          <Route path="/leadership" element={<LeadershipPage />} />
           <Route path="/advisory-boards" element={<AdvisoryBoardsPage />} />
           <Route path="/negotiation-support" element={<NegotiationSupportPage />} />
           <Route path="/confidentiality" element={<ConfidentialityPage />} />
           <Route path="/esg-statement" element={<ESGStatementPage />} />
+          <Route path="/successes" element={<SuccessesPage />} />
+          <Route path="/contact" element={<ContactPage />} />
         </Routes>
         <Footer />
       </BrowserRouter>

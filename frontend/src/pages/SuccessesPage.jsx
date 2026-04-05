@@ -1,8 +1,7 @@
 import React from 'react';
 
-const SuccessesSection = () => {
+const SuccessesPage = () => {
   const tombstoneImages = [
-    // Minerals & Metals - 20 images
     'https://gcp-international.com/wp-content/uploads/2023/09/Picture1-1.png',
     'https://gcp-international.com/wp-content/uploads/2023/09/Picture3.png',
     'https://gcp-international.com/wp-content/uploads/2023/09/Picture2-1.png',
@@ -74,16 +73,13 @@ const SuccessesSection = () => {
   ];
 
   return (
-    <section id="successes" className="py-24 bg-white">
-      <div className="max-w-6xl mx-auto px-8">
-        <h2 className="text-4xl font-light text-center mb-6 text-[#2c4c6e] tracking-wide">
-          SUCCESSES
-        </h2>
+    <div className="pt-24 min-h-screen bg-white">
+      <div className="max-w-6xl mx-auto px-8 py-16">
+        <h1 className="text-4xl font-light text-center mb-6 text-[#2c4c6e] tracking-wide">SUCCESSES</h1>
         <div className="w-16 h-[1px] bg-[#ddd] mx-auto mb-4"></div>
         <p className="text-center text-[#666] mb-16 text-sm tracking-wide">Transaction Highlights</p>
         
         <div className="space-y-20">
-          {/* Background Section */}
           <div className="space-y-4 text-[#555] leading-relaxed text-sm">
             <h3 className="text-xl font-medium text-[#333] mb-4">Background</h3>
             <ul className="space-y-4 list-disc pl-6">
@@ -95,7 +91,6 @@ const SuccessesSection = () => {
             </ul>
           </div>
 
-          {/* Minerals & Metals */}
           <div>
             <h3 className="text-2xl font-light text-[#2c4c6e] mb-4">Minerals & Metals Transaction Highlights</h3>
             <p className="text-[#666] mb-8 text-sm">Product Offtake – Mining & Metals – Japan, U.S., South Korea, and mainland China</p>
@@ -111,7 +106,6 @@ const SuccessesSection = () => {
             </div>
           </div>
 
-          {/* More Minerals */}
           <div>
             <h3 className="text-2xl font-light text-[#2c4c6e] mb-4">More Minerals & Metals Transaction Highlights</h3>
             <p className="text-[#666] mb-8 text-sm">Transaction & Corporate Advisory Experience – London, mainland China, Laos and Vietnam</p>
@@ -127,7 +121,6 @@ const SuccessesSection = () => {
             </div>
           </div>
 
-          {/* Healthcare */}
           <div>
             <h3 className="text-2xl font-light text-[#2c4c6e] mb-4">Healthcare, HealthTech & Biotech Transaction Highlights</h3>
             <p className="text-[#666] mb-8 text-sm">Corporate Advisory & Business Agreements – mainland China, Taiwan and the U.S.</p>
@@ -143,7 +136,6 @@ const SuccessesSection = () => {
             </div>
           </div>
 
-          {/* More Healthcare */}
           <div>
             <h3 className="text-2xl font-light text-[#2c4c6e] mb-4">More Healthcare, HealthTech & Biotech Transaction Highlights</h3>
             <p className="text-[#666] mb-8 text-sm">R&D Exchange, Asset Bid, Investment, M&A and fund raising advisory – Australia, U.S., Germany, UK, Hong Kong, and Dubai</p>
@@ -159,7 +151,6 @@ const SuccessesSection = () => {
             </div>
           </div>
 
-          {/* IT&T */}
           <div>
             <h3 className="text-2xl font-light text-[#2c4c6e] mb-4">IT&T Transaction Highlights</h3>
             <p className="text-[#666] mb-8 text-sm">Corporate Advisory, MBI, M&A, investment, & fund raising – U.S., Hong Kong and Singapore</p>
@@ -176,8 +167,8 @@ const SuccessesSection = () => {
           </div>
         </div>
       </div>
-    </section>
+    </div>
   );
 };
 
-export default SuccessesSection;
+export default SuccessesPage;
