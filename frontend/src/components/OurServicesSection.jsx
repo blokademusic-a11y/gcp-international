@@ -1,5 +1,6 @@
 import React from 'react';
 import { ArrowRight } from 'lucide-react';
+import { Link } from 'react-router-dom';
 
 const OurServicesSection = () => {
   return (
@@ -20,10 +21,10 @@ const OurServicesSection = () => {
           
           {/* Right Side - Content */}
           <div className="space-y-6">
-            <a href="/services" className="flex items-center gap-3 mb-6 group">
+            <Link to="/services" className="flex items-center gap-3 mb-6 group">
               <h3 className="text-2xl font-medium text-[#2c4c6e] tracking-wide group-hover:text-[#1a3a54] transition-colors">OUR SERVICES</h3>
               <ArrowRight className="w-5 h-5 text-[#2c4c6e] group-hover:translate-x-1 transition-transform" />
-            </a>
+            </Link>
             <div className="w-12 h-[2px] bg-[#ddd] mb-6"></div>
             
             <div className="space-y-5 text-[#555] leading-relaxed text-[15px]">
