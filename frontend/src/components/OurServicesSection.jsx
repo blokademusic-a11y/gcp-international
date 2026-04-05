@@ -1,25 +1,34 @@
 import React from 'react';
+import { ArrowRight } from 'lucide-react';
 
-const Leadership = () => {
+const OurServicesSection = () => {
   return (
-    <section className="py-24 bg-white">
-      <div className="max-w-6xl mx-auto px-6">
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-start">
+    <section id="services" className="py-20 bg-gray-50">
+      <div className="max-w-7xl mx-auto px-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-16 items-start">
+          {/* Left Side - Image with blue bar */}
           <div className="relative">
-            <div className="w-1 bg-blue-600 absolute left-0 top-0 bottom-0"></div>
+            <div className="absolute left-0 top-0 bottom-0 w-1 bg-blue-500"></div>
             <div className="pl-8">
               <img
-                src="https://images.unsplash.com/photo-1560250097-0b93528c311a?w=600&q=80"
-                alt="Mr James Egan"
-                className="w-full h-auto shadow-lg"
+                src="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/698c6230c69e9d4f52fff61c/db7ebecbc_image.png"
+                alt="James Egan"
+                className="w-full shadow-lg"
               />
             </div>
           </div>
           
+          {/* Right Side - Content */}
           <div className="space-y-6">
-            <h3 className="text-3xl font-light text-slate-800 mb-2">Mr James Egan</h3>
+            <div className="flex items-center gap-3 mb-6">
+              <h3 className="text-2xl font-medium text-[#2c4c6e] tracking-wide">OUR SERVICES</h3>
+              <ArrowRight className="w-5 h-5 text-[#2c4c6e]" />
+            </div>
+            <div className="w-12 h-[2px] bg-[#ddd] mb-6"></div>
             
-            <div className="text-slate-600 leading-relaxed space-y-4 text-sm">
+            <div className="space-y-5 text-[#555] leading-relaxed text-[15px]">
+              <h4 className="text-lg font-semibold text-[#333]">Mr James Egan</h4>
+              
               <p>
                 James Egan is the founder, Chairman and Managing Director of GCP International Limited. He has more than 
                 forty years experience in domestic and international capital markets. He has a deep loyalty and commitment 
@@ -31,12 +40,9 @@ const Leadership = () => {
                 mainland China, Mr Egan has worked in the financial services industry since 1978. He has experience in 
                 senior executive roles with market leaders including Ord Minnett, Schroders and Merrill Lynch. At Merrill 
                 he was a founding Director, and Head of Merrill Lynch's Australian Merchant Banking operations and sat on 
-                the Australian Executive Committee.
-              </p>
-              
-              <p>
-                Later he joined Shearson Lehman Bros Asia Inc. as Senior Vice President based in London and then Tokyo, 
-                where he was head of Asian Trading & Sales for all non-USD securities, as well as advising on new issues.
+                the Australian Executive Committee. Later he joined Shearson Lehman Bros Asia Inc. as Senior Vice President 
+                based in London and then Tokyo, where he was head of Asian Trading & Sales for all non-USD securities, as well 
+                as advising on new issues.
               </p>
               
               <p>
@@ -60,4 +66,4 @@ const Leadership = () => {
   );
 };
 
-export default Leadership;
+export default OurServicesSection;
