@@ -1,6 +1,5 @@
 import React from 'react';
 import { ArrowRight } from 'lucide-react';
-import { Link } from 'react-router-dom';
 
 const LeadershipSection = () => {
   return (
@@ -9,10 +8,10 @@ const LeadershipSection = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-16 items-start">
           {/* Left Side - Content */}
           <div className="space-y-6">
-            <Link to="/leadership" className="flex items-center gap-3 mb-6 group">
-              <h3 className="text-2xl font-medium text-[#2c4c6e] tracking-wide group-hover:text-[#1a3a54] transition-colors">LEADERSHIP</h3>
-              <ArrowRight className="w-5 h-5 text-[#2c4c6e] group-hover:translate-x-1 transition-transform" />
-            </Link>
+            <div className="flex items-center gap-3 mb-6">
+              <h3 className="text-2xl font-medium text-[#2c4c6e] tracking-wide">LEADERSHIP</h3>
+              <ArrowRight className="w-5 h-5 text-[#2c4c6e]" />
+            </div>
             <div className="w-12 h-[2px] bg-[#ddd] mb-6"></div>
             
             <div className="space-y-5 text-[#555] leading-relaxed text-[15px]">

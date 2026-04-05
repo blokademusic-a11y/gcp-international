@@ -1,6 +1,5 @@
 import React from 'react';
 import { ArrowRight } from 'lucide-react';
-import { Link } from 'react-router-dom';
 
 const OurServicesSection = () => {
   return (
@@ -12,7 +11,7 @@ const OurServicesSection = () => {
             <div className="absolute left-0 top-0 bottom-0 w-1 bg-blue-500"></div>
             <div className="pl-8">
               <img
-                src="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/698c6230c69e9d4f52fff61c/db7ebecbc_image.png"
+                src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=800&q=80"
                 alt="Our Services"
                 className="w-full shadow-lg"
               />
@@ -21,10 +20,10 @@ const OurServicesSection = () => {
           
           {/* Right Side - Content */}
           <div className="space-y-6">
-            <Link to="/services" className="flex items-center gap-3 mb-6 group">
+            <a href="/services" className="flex items-center gap-3 mb-6 group">
               <h3 className="text-2xl font-medium text-[#2c4c6e] tracking-wide group-hover:text-[#1a3a54] transition-colors">OUR SERVICES</h3>
               <ArrowRight className="w-5 h-5 text-[#2c4c6e] group-hover:translate-x-1 transition-transform" />
-            </Link>
+            </a>
             <div className="w-12 h-[2px] bg-[#ddd] mb-6"></div>
             
             <div className="space-y-5 text-[#555] leading-relaxed text-[15px]">
